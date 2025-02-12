@@ -56,7 +56,7 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "bun prettier",
-      "bun lint:fix"
+      "bun lint:fix --ignore"
     ]
   }
 }
