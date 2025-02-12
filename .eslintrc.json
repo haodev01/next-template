@@ -6,7 +6,7 @@
     "plugin:react/recommended",
     "prettier"
   ],
-  "plugins": ["filename-rules", "react", "import", "@typescript-eslint"],
+  "plugins": ["react", "import", "@typescript-eslint", "validate-filename"],
   "rules": {
     // "no-console": "error",
     "eqeqeq": ["warn", "always"],
@@ -18,21 +18,21 @@
     "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/array-type": "error",
-    "@typescript-eslint/no-empty-object-type": "error"
-  },
-  "overrides": [
-    {
-      "files": ["components/**/*.{js,jsx,ts,tsx}"],
-      "rules": {
-        "filename-rules/match": [
-          "error",
+    "@typescript-eslint/no-empty-object-type": "error",
+
+    "validate-filename/naming-rules": [
+      "error",
+      {
+        "rules": [
           {
-            "match": "^[a-z]+(?:-[a-z0-9]+)*$"
+            "case": "kebab",
+            "target": "**/components/**",
+            "excludes": ["hooks"]
           }
         ]
       }
-    }
-  ],
+    ]
+  },
 
   "ignorePatterns": [
     "node_modules",
