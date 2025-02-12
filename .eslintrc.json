@@ -27,7 +27,7 @@
         "filename-rules/match": [
           "error",
           {
-            "match": "^[a-z0-9\\-]+$"
+            "match": "^[a-z]+(?:-[a-z0-9]+)*$"
           }
         ]
       }
