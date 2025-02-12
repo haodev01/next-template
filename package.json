@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
@@ -53,8 +53,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
+      "bun lint:fix"
     ]
   }
 }

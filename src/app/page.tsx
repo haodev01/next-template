@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-
-export default function Home() {
+import { Button } from '@/components/ui/button';
+import React from 'react';
+export default function Home(): React.JSX.Element {
   return (
     <div>
       <h1>Home Page</h1>

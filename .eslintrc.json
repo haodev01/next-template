@@ -4,11 +4,9 @@
     "next/typescript",
     "eslint:recommended",
     "plugin:react/recommended",
-    "prettier",
-    "plugin:@next/next/recommended",
-    "plugin:react-hooks/recommended"
+    "prettier"
   ],
-  "plugins": ["react", "react-hooks", "import", "@typescript-eslint"],
+  "plugins": ["react", "import", "@typescript-eslint"],
   "rules": {
     // "no-console": "error",
     "eqeqeq": ["warn", "always"],
