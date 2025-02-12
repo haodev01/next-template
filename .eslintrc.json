@@ -20,6 +20,19 @@
     "@typescript-eslint/array-type": "error",
     "@typescript-eslint/no-empty-object-type": "error"
   },
+  "overrides": [
+    {
+      "files": ["components/**/*.{js,jsx,ts,tsx}"],
+      "rules": {
+        "filename-rules/match": [
+          "error",
+          {
+            "match": "^[a-z0-9\\-]+$"
+          }
+        ]
+      }
+    }
+  ],
 
   "ignorePatterns": [
     "node_modules",
